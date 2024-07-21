@@ -103,6 +103,8 @@ body {
   height: 50px;
   padding: var(--p-sm);
   margin-top: var(--m-base);
+  overflow: hidden;
+  text-overflow: ellipsis;
   background-color: var(--clr-ntrl-min);
 }
 
@@ -119,6 +121,7 @@ body {
   width: 100%;
   padding: var(--p-sm);
   margin-top: var(--m-base);
+  overflow-wrap: break-word;
   background-color: var(--clr-ntrl-min);
 }
 
