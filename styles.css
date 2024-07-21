@@ -1,3 +1,4 @@
+<<<<<<< HEAD:styles.css
 :root {
   /* Размер шрифта в корне для rem */
 
@@ -140,4 +141,145 @@ body {
 .footer__textarea {
   width: 100%;
   max-height: 300px;
+=======
+:root {
+  /* Размер шрифта в корне для rem */
+
+  font-size: 16px;
+
+  /* Модификаторы для размеров могут быть: base, sm, smr, smst, lg, lgr, lgst, и т.д. (От слов small, large) */
+
+  /* Paddings */
+  --p-base: 10px;
+  --p-sm: 5px;
+
+  /* Margins (Могут быть использованы для gap) */
+  --m-base: 10px;
+  --m-base: 5px;
+
+  /* Border-widths */
+  --bw-base: 2px;
+
+  /* Модификаторы для цветов могут быть: lt, ltr, ltst, dk, dkr, dkst и т.д. (От слов light, dark) */
+  
+  /* Colors */
+  --clr-ntrl: #eee;
+  --clr-ntrl-lt: #f5f5f5;
+  --clr-ntrl-dk: #ebebeb;
+  --clr-ntrl-min: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+  height: min-content;
+}
+
+textarea {
+	font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.app {
+  display: grid;
+  grid-template-areas: 'nav nav' 'aside chat' 'footer footer';
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: auto 1fr auto;
+  max-height: 100vh;
+}
+
+.nav {
+  grid-area: nav;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--m-base);
+  min-height: 60px;
+  padding: var(--p-base);
+  background-color: var(--clr-ntrl-lt);
+  border-bottom: var(--bw-base) solid var(--clr-ntrl);
+}
+
+.nav__section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--m-base);
+  width: 100%;
+}
+
+.nav__heading {
+  width: 100%;
+}
+
+.nav__links {
+  width: 100%;
+  display: flex;
+  gap: var(--m-base);
+}
+
+.nav__link {
+  display: block;
+  height: 50px;
+}
+
+.user-list {
+  grid-area: aside;
+  width: 200px;
+  max-width: 200px;
+  padding: var(--p-base);
+  overflow-y: auto;
+  background-color: var(--clr-ntrl-lt);
+}
+
+.user-list__user {
+  width: 100%;
+  height: 50px;
+  padding: var(--p-sm);
+  margin-top: var(--m-base);
+  background-color: var(--clr-ntrl-min);
+}
+
+.chat {
+  grid-area: chat;
+  min-height: 400px;
+  padding: var(--p-base);
+  overflow-y: auto;
+  background-color: var(--clr-ntrl);
+}
+
+.chat__message {
+  min-height: 70px;
+  width: 100%;
+  padding: var(--p-sm);
+  margin-top: var(--m-base);
+  background-color: var(--clr-ntrl-min);
+}
+
+.footer {
+  grid-area: footer;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--m-base);
+  min-height: 100px;
+  max-height: 400px;
+  padding: var(--p-base);
+  background-color: var(--clr-ntrl-lt);
+  border-top: var(--bw-base) solid var(--clr-ntrl);
+}
+
+.footer__textarea {
+  width: 100%;
+  max-height: 300px;
+>>>>>>> f0299e62eb38a5e4d8e2ab7579cbf2e8d23f23f7:chat-interface-for-hh/styles.css
 }
